@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+android/
+ios/
+web-build/
+dist/
+
+# Local env
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Expo
+.expo/
