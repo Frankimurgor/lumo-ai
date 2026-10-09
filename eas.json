@@ -14,7 +14,7 @@
       "android": { "buildType": "apk" },
       "channel": "preview",
       "env": {
-        "EXPO_USE_NPM_CI": "0"
+        "EAS_NO_FROZEN_LOCKFILE": "1"
       }
     },
     "production": {
@@ -22,7 +22,7 @@
       "android": { "buildType": "app-bundle" },
       "channel": "production",
       "env": {
-        "EXPO_USE_NPM_CI": "0"
+        "EAS_NO_FROZEN_LOCKFILE": "1"
       }
     }
   },
