@@ -1,21 +1,30 @@
-The MIT License (MIT)
 
-Copyright (c) 2015-present 650 Industries, Inc. (aka Expo)
+---
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## 4. Create the GitHub repo
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+**Two options — pick one.**
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### Option A: Create via website (easiest, no tools to install)
+
+1. Open https://github.com/new in your browser
+2. **Repository name:** `lumo-ai` (all lowercase, dashes)
+3. **Description:** `Every major AI tool — one clean, ad-free app. React Native + Expo.`
+4. **Visibility:** Public (recommended — helps with "Hire Me" credibility)
+5. ⚠️ **DO NOT** check "Add a README file", "Add .gitignore", or "Choose a license" — you already have those
+6. Click **Create repository**
+7. GitHub shows you a page with commands — **ignore those**, use the ones below
+
+### Option B: Create via `gh` CLI (needs one-time install)
+
+Skip if you chose Option A.
+
+```bash
+# Install once (if you don't have it)
+winget install --id GitHub.cli
+
+# Authenticate (opens browser)
+gh auth login
+
+# Create the repo and set it as remote
+gh repo create lumo-ai --public --source=. --remote=origin --description "Every major AI tool — one clean, ad-free app. React Native + Expo."
